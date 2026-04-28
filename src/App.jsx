@@ -364,8 +364,8 @@ const HUD = ({ hits, elapsed, reshufflePct, visible }) => (
     pointerEvents: "none",
   }}>
     {[
-      { label: "COLLISIONS", value: hits, warn: hits > 0 },
-      { label: "TIME", value: fmtTime(elapsed) },
+      { label: "CHOQUES", value: hits, warn: hits > 0 },
+      { label: "TIEMPO", value: fmtTime(elapsed) },
     ].map(({ label, value, warn }) => (
       <div key={label} style={{
         background: "rgba(2,8,20,0.85)",
@@ -693,7 +693,7 @@ export default function Navigator3D() {
       <Overlay visible={screen === "menu"}>
         <div style={panelStyle}>
           {["tl","tr","bl","br"].map(p => <Corner key={p} pos={p} />)}
-          <Title sub="3D obstacle navigator">NAVIGATOR</Title>
+          <Title sub="Evasor de objetos 3D">NAVIGATOR</Title>
           <Btn onClick={doStartGame}>▶ INICAR</Btn>
           <div style={{ marginTop: 28, fontSize: "0.62rem", color: "rgba(0,229,255,0.35)", lineHeight: 2.2, letterSpacing: "0.05em" }}>
             MOVER MOUSE → altura de la nave<br />
@@ -732,7 +732,7 @@ export default function Navigator3D() {
             border: "1px solid rgba(0,229,255,0.2)",
             background: "rgba(0,229,255,0.04)",
           }}>
-            <div style={{ fontSize: "0.55rem", letterSpacing: "0.3em", color: "rgba(0,229,255,0.4)", marginBottom: 10, textTransform: "uppercase" }}>Final Score</div>
+            <div style={{ fontSize: "0.55rem", letterSpacing: "0.3em", color: "rgba(0,229,255,0.4)", marginBottom: 10, textTransform: "uppercase" }}>Puntaje Final</div>
             <div style={{
               fontFamily: "'Orbitron', monospace",
               fontSize: "3rem", fontWeight: 900,
