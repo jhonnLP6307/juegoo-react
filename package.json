@@ -12,14 +12,12 @@
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.6.1",
-    "@react-three/rapier": "^2.2.0",
     "ddo-dnd": "^0.0.2",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-moveable": "^0.56.0",
     "react-spring": "^10.0.3",
-    "three": "^0.184.0",
-    "zustand": "^5.0.12"
+    "three": "^0.184.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
